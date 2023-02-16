@@ -1,0 +1,23 @@
+/* Main Content */
+h1 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+h1:nth-last-child(1) {
+  background-color: #003366;
+}
+
+.form-result {
+  color: var(--color-primary);
+  padding-left: 10px;
+  margin: 0;
+  padding: 20px;
+}
+
+#form-results {
+  margin: 0 auto;
+  width: 50%;
+  border: 3px solid var(--color-primary);
+  border-radius: 3px;
+}

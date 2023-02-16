@@ -1,0 +1,87 @@
+/* Body Content */
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container h1 {
+  text-align: center;
+  color: var(--color-primary)
+}
+
+/* Form */
+#form {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: black;
+  border: solid black 2px;
+}
+
+.set {
+  border: 1px solid var(--accent-color-light);
+  background-color: var(--accent-color-light);
+  padding: 20px;
+}
+
+.set:nth-child(1){
+  border-radius: 10px 10px 0 0;
+}
+
+.set:nth-last-child(1){
+  border-radius: 0 0 10px 10px;
+}
+
+.set h3 {
+  border-bottom: solid black 1px;
+  padding-bottom: 5px;
+  display: inline-block;
+  width: calc(100% - 50px);
+}
+
+.field label, input, textarea {
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+  resize: none;
+}
+
+.field input {
+  width: calc(100% - 5px);
+}
+
+.field textarea {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.field label {
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+#toggle-required {
+  position: absolute;
+  left: -20000px
+}
+
+#toggle-required:focus {
+  position: relative;
+  left: 0px;
+  display: inline-block;
+  border: solid red 1px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 530px) {
+  .set textarea {
+    width: 205px;
+  }
+
+}

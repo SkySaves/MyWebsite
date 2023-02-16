@@ -1,0 +1,22 @@
+/* Main Content */
+#main-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* Links */
+#main-container a {
+  text-decoration: none;
+  color: var(--accent-color-light);
+  transition: all 0.3s ease-in-out;
+}
+
+#main-container a:hover {
+  color: goldenrod;
+}
+
+#main-container a:active {
+  color: black;
+}
